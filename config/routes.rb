@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
-
-
-end
+    get("/rock", { :controller => "application", :action => "play_rock" })
+  
+    get("/", { :controller => "application", :action => "homepage" })
+  end
