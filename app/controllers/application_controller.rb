@@ -13,7 +13,8 @@ class ApplicationController < ActionController::Base
     end
 
     full_message = "You played rock. They played " + computer_move + ". You " + outcome + "!"
-
+    
+    render({ :plain =>  full_message })
     render({ :plain =>  full_message })
   end
 
